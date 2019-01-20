@@ -1,0 +1,24 @@
+Измерительный трансформатор T1:
+	Talema AC-1005 https://www.chipdip.ru/product/ac-1005
+	ZMCT102 https://lcsc.com/product-detail/Current-Transformers_Qingxian-Zeming-Langxi-Elec-ZMCT102_C84213.html
+	ZMCT103C https://lcsc.com/product-detail/Current-Transformers_Qingxian-Zeming-Langxi-Elec-ZMCT103C_C94571.html
+
+Силовой трансформатор T2:
+	ТПК-1-6 https://www.chipdip.ru/product/tpk-1-6v
+	Либо китайские EI-35
+
+Транзистор Q1:
+	Корпус SOT-32 / TO-126
+	С расположением выводов ECB
+	Ток коллектора не менее 1 Ампер
+	https://www.chipdip.ru/catalog/bipolar-transistors?x.4=nDk&x.12=jqn&x.12=kqn&x.12=pkp&x.12=qkp&sort=priceup
+	Например BD139:
+		https://lcsc.com/product-detail/Transistors-NPN-PNP_STMicroelectronics_BD139_BD139_C27866.html
+		https://www.chipdip.ru/product/bd139-10-stm
+
+TL431:
+	https://www.chipdip.ru/catalog/ic-voltage-references?x.1602=dsp&sort=priceup&gq=TL431
+
+Выпрямитель D3:
+	2W10M https://www.chipdip.ru/product/2w10m
+	2W10 https://lcsc.com/product-detail/Bridge-Rectifiers_Jiangsu-Yutai-Elec-2W10_C3064.html

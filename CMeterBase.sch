@@ -1,0 +1,713 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:CMeterBase-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 700  3550 0    60   ~ 0
+Фаза 2
+Text Notes 700  3450 0    60   ~ 0
+Фаза 1
+$Comp
+L GNDD #PWR01
+U 1 1 5C324EBB
+P 4900 4000
+F 0 "#PWR01" H 4900 3750 50  0001 C CNN
+F 1 "GNDD" H 4900 3875 50  0001 C CNN
+F 2 "" H 4900 4000 50  0001 C CNN
+F 3 "" H 4900 4000 50  0001 C CNN
+	1    4900 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR02
+U 1 1 5C3274F2
+P 6900 4000
+F 0 "#PWR02" H 6900 3750 50  0001 C CNN
+F 1 "GNDD" H 6900 3875 50  0001 C CNN
+F 2 "" H 6900 4000 50  0001 C CNN
+F 3 "" H 6900 4000 50  0001 C CNN
+	1    6900 4000
+	1    0    0    -1  
+$EndComp
+Text Notes 2200 1600 0    60   ~ 0
+Измерительный\nтрансформатор
+$Comp
+L GNDD #PWR03
+U 1 1 5C3338AF
+P 3900 1700
+F 0 "#PWR03" H 3900 1450 50  0001 C CNN
+F 1 "GNDD" H 3900 1575 50  0001 C CNN
+F 2 "" H 3900 1700 50  0001 C CNN
+F 3 "" H 3900 1700 50  0001 C CNN
+	1    3900 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR04
+U 1 1 5C33414D
+P 3450 1700
+F 0 "#PWR04" H 3450 1450 50  0001 C CNN
+F 1 "GNDD" H 3450 1575 50  0001 C CNN
+F 2 "" H 3450 1700 50  0001 C CNN
+F 3 "" H 3450 1700 50  0001 C CNN
+	1    3450 1700
+	1    0    0    -1  
+$EndComp
+Text Notes 1700 3500 0    60   ~ 0
+220V
+Text Notes 2400 3500 0    60   ~ 0
+6V
+$Comp
+L GNDD #PWR05
+U 1 1 5C349540
+P 9600 4000
+F 0 "#PWR05" H 9600 3750 50  0001 C CNN
+F 1 "GNDD" H 9600 3875 50  0001 C CNN
+F 2 "" H 9600 4000 50  0001 C CNN
+F 3 "" H 9600 4000 50  0001 C CNN
+	1    9600 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 5C34C6FD
+P 3900 1500
+F 0 "R2" H 4000 1350 50  0000 C CNN
+F 1 "510" V 3900 1500 50  0000 C CNN
+F 2 "MyFootprints:RES" V 3830 1500 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/53173" H 3900 1500 50  0001 C CNN
+	1    3900 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 5C3520F1
+P 3700 3450
+F 0 "R4" V 3600 3450 50  0000 C CNN
+F 1 "10" V 3700 3450 50  0000 C CNN
+F 2 "MyFootprints:RES1W" V 3630 3450 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/689734906" H 3700 3450 50  0001 C CNN
+	1    3700 3450
+	0    1    1    0   
+$EndComp
+Text Notes 3550 3600 0    60   ~ 0
+1 Ватт
+$Comp
+L L_Measure T1
+U 1 1 5C356B31
+P 3400 1500
+F 0 "T1" H 3550 1500 50  0000 C CNN
+F 1 "L_Measure" H 3500 1250 50  0001 C CNN
+F 2 "MyFootprints:AC-1005_ZMCT102" H 3450 1500 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product/ac-1005" H 3450 1500 50  0001 C CNN
+	1    3400 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L TL431 D4
+U 1 1 5C35C103
+P 5700 4200
+F 0 "D4" H 5850 4250 50  0000 C CNN
+F 1 "TL431" H 5900 4150 50  0000 C CNN
+F 2 "MyFootprints:TL431" V 5700 4200 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product/tl431aclp-ti" V 5700 4200 50  0001 C CNN
+	1    5700 4200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L R R8
+U 1 1 5C35CBA3
+P 6400 3700
+F 0 "R8" H 6550 3700 50  0000 C CNN
+F 1 "10k" V 6400 3700 50  0000 C CNN
+F 2 "MyFootprints:RES" V 6330 3700 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/41486" H 6400 3700 50  0001 C CNN
+	1    6400 3700
+	1    0    0    1   
+$EndComp
+$Comp
+L R R9
+U 1 1 5C35CC8A
+P 6400 4450
+F 0 "R9" H 6550 4450 50  0000 C CNN
+F 1 "10k" V 6400 4450 50  0000 C CNN
+F 2 "MyFootprints:RES" V 6330 4450 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/41486" H 6400 4450 50  0001 C CNN
+	1    6400 4450
+	1    0    0    1   
+$EndComp
+$Comp
+L GNDD #PWR06
+U 1 1 5C35D17C
+P 5700 4650
+F 0 "#PWR06" H 5700 4400 50  0001 C CNN
+F 1 "GNDD" H 5700 4525 50  0001 C CNN
+F 2 "" H 5700 4650 50  0001 C CNN
+F 3 "" H 5700 4650 50  0001 C CNN
+	1    5700 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR07
+U 1 1 5C35D860
+P 6400 4650
+F 0 "#PWR07" H 6400 4400 50  0001 C CNN
+F 1 "GNDD" H 6400 4525 50  0001 C CNN
+F 2 "" H 6400 4650 50  0001 C CNN
+F 3 "" H 6400 4650 50  0001 C CNN
+	1    6400 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR08
+U 1 1 5C35DB71
+P 6050 4650
+F 0 "#PWR08" H 6050 4400 50  0001 C CNN
+F 1 "GNDD" H 6050 4525 50  0001 C CNN
+F 2 "" H 6050 4650 50  0001 C CNN
+F 3 "" H 6050 4650 50  0001 C CNN
+	1    6050 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R5
+U 1 1 5C35F0F3
+P 5300 3700
+F 0 "R5" H 5450 3700 50  0000 C CNN
+F 1 "1k" V 5300 3700 50  0000 C CNN
+F 2 "MyFootprints:RES" V 5230 3700 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/24834" H 5300 3700 50  0001 C CNN
+	1    5300 3700
+	1    0    0    -1  
+$EndComp
+Text Notes 6100 4200 0    60   ~ 0
+2.5V
+Text Notes 6100 3450 0    60   ~ 0
+5V
+$Comp
+L Q_NPN_ECB Q1
+U 1 1 5C36C746
+P 5700 3550
+F 0 "Q1" V 5650 3300 50  0000 L CNN
+F 1 "Q_NPN_ECB" H 5900 3500 50  0001 L CNN
+F 2 "MyFootprints:TO-126_Horizontal" H 5900 3650 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product/bd139-10-stm" H 5700 3550 50  0001 C CNN
+	1    5700 3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C10
+U 1 1 5C35D5C7
+P 6050 4450
+F 0 "C10" H 6075 4550 50  0000 L CNN
+F 1 "1nF" H 6075 4350 50  0000 L CNN
+F 2 "MyFootprints:CAP" H 6088 4300 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/41339" H 6050 4450 50  0001 C CNN
+	1    6050 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 3400 1450 3250
+Wire Wire Line
+	3850 3450 5500 3450
+Wire Wire Line
+	4900 3450 4900 3600
+Connection ~ 4900 3450
+Wire Wire Line
+	4900 3900 4900 4000
+Wire Wire Line
+	6900 3900 6900 4000
+Wire Wire Line
+	6900 3450 6900 3600
+Connection ~ 6900 3450
+Wire Wire Line
+	3450 1250 4700 1250
+Wire Wire Line
+	3900 1250 3900 1350
+Wire Wire Line
+	3900 1650 3900 1700
+Wire Wire Line
+	3450 1350 3450 1250
+Connection ~ 3900 1250
+Wire Wire Line
+	3450 1650 3450 1700
+Wire Wire Line
+	1450 3250 1800 3250
+Wire Wire Line
+	1450 3650 1800 3650
+Wire Wire Line
+	1450 3400 1350 3400
+Wire Wire Line
+	1350 3500 1450 3500
+Wire Wire Line
+	1450 3500 1450 3650
+Connection ~ 4000 3450
+Wire Wire Line
+	9600 3900 9600 4000
+Wire Wire Line
+	5300 3850 5300 3900
+Wire Wire Line
+	5300 3900 5700 3900
+Wire Wire Line
+	5700 3750 5700 4050
+Connection ~ 5700 3900
+Wire Wire Line
+	5300 3450 5300 3550
+Wire Wire Line
+	6400 3450 6400 3550
+Wire Wire Line
+	5850 4200 6400 4200
+Wire Wire Line
+	6400 3850 6400 4300
+Connection ~ 6400 4200
+Wire Wire Line
+	6400 4600 6400 4650
+Wire Wire Line
+	5700 4650 5700 4350
+Wire Wire Line
+	6050 4650 6050 4600
+Connection ~ 6050 4200
+Connection ~ 5300 3450
+Connection ~ 6400 3450
+Wire Wire Line
+	6050 4300 6050 4200
+$Comp
+L D_Zener_ALT D8
+U 1 1 5C36E171
+P 9150 3750
+F 0 "D8" V 9150 3900 50  0000 C CNN
+F 1 "1N4734" H 9150 3650 50  0000 C CNN
+F 2 "MyFootprints:DO-41" H 9150 3750 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product/1n4734a" H 9150 3750 50  0001 C CNN
+	1    9150 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L GNDD #PWR09
+U 1 1 5C36E606
+P 9150 4000
+F 0 "#PWR09" H 9150 3750 50  0001 C CNN
+F 1 "GNDD" H 9150 3875 50  0001 C CNN
+F 2 "" H 9150 4000 50  0001 C CNN
+F 3 "" H 9150 4000 50  0001 C CNN
+	1    9150 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 3900 9150 4000
+Wire Wire Line
+	9150 3450 9150 3600
+Connection ~ 9150 3450
+Wire Wire Line
+	9600 3600 9600 3450
+Connection ~ 9600 3450
+$Comp
+L D_Bridge_+-AA D3
+U 1 1 5C3731DC
+P 3150 3450
+F 0 "D3" H 3200 3725 50  0000 L CNN
+F 1 "2W10" H 3200 3200 50  0000 L CNN
+F 2 "MyFootprints:WOB_Bridge_Rectifier" H 3150 3450 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product/2w10m" H 3150 3450 50  0001 C CNN
+	1    3150 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 3250 2650 3250
+Wire Wire Line
+	2650 3250 2650 3100
+Wire Wire Line
+	2650 3100 3150 3100
+Wire Wire Line
+	3150 3100 3150 3150
+Wire Wire Line
+	2600 3650 2650 3650
+Wire Wire Line
+	2650 3650 2650 3800
+Wire Wire Line
+	2650 3800 3150 3800
+Wire Wire Line
+	3150 3800 3150 3750
+$Comp
+L GNDD #PWR010
+U 1 1 5C3741E3
+P 2800 4000
+F 0 "#PWR010" H 2800 3750 50  0001 C CNN
+F 1 "GNDD" H 2800 3875 50  0001 C CNN
+F 2 "" H 2800 4000 50  0001 C CNN
+F 3 "" H 2800 4000 50  0001 C CNN
+	1    2800 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 3450 2800 3450
+Wire Wire Line
+	2800 3450 2800 4000
+Wire Wire Line
+	3450 3450 3550 3450
+$Comp
+L C C7
+U 1 1 5C3853E0
+P 4900 3750
+F 0 "C7" H 4925 3850 50  0000 L CNN
+F 1 "0.1uF" H 4925 3650 50  0000 L CNN
+F 2 "MyFootprints:CAP" H 4938 3600 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/77059545" H 4900 3750 50  0001 C CNN
+	1    4900 3750
+	1    0    0    -1  
+$EndComp
+Connection ~ 4450 3450
+$Comp
+L D_Schottky_ALT D9
+U 1 1 5C3865D8
+P 9600 3750
+F 0 "D9" V 9600 3900 50  0000 C CNN
+F 1 "1N5817" H 9600 3650 50  0000 C CNN
+F 2 "MyFootprints:DO-41" H 9600 3750 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product/1n5817-stm" H 9600 3750 50  0001 C CNN
+	1    9600 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L GNDD #PWR011
+U 1 1 5C386A80
+P 8700 4000
+F 0 "#PWR011" H 8700 3750 50  0001 C CNN
+F 1 "GNDD" H 8700 3875 50  0001 C CNN
+F 2 "" H 8700 4000 50  0001 C CNN
+F 3 "" H 8700 4000 50  0001 C CNN
+	1    8700 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C18
+U 1 1 5C386B9F
+P 8700 3750
+F 0 "C18" H 8750 3850 50  0000 L CNN
+F 1 "0.1uF" H 8725 3650 50  0000 L CNN
+F 2 "MyFootprints:CAP" H 8738 3600 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/77059545" H 8700 3750 50  0001 C CNN
+	1    8700 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 3900 8700 4000
+Wire Wire Line
+	8700 3600 8700 3450
+Connection ~ 8700 3450
+$Comp
+L CP C11
+U 1 1 5C399DC0
+P 6900 3750
+F 0 "C11" H 6950 3850 50  0000 L CNN
+F 1 "10000uF" V 6750 3600 50  0000 L CNN
+F 2 "MyFootprints:CAP_D16_L36" H 6938 3600 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/178501080" H 6900 3750 50  0001 C CNN
+	1    6900 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C12
+U 1 1 5C39A53F
+P 7350 3750
+F 0 "C12" H 7400 3850 50  0000 L CNN
+F 1 "10000uF" V 7200 3600 50  0000 L CNN
+F 2 "MyFootprints:CAP_D16_L36-2" H 7388 3600 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/178501080" H 7350 3750 50  0001 C CNN
+	1    7350 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C13
+U 1 1 5C39A642
+P 7800 3750
+F 0 "C13" H 7850 3850 50  0000 L CNN
+F 1 "10000uF" V 7650 3600 50  0000 L CNN
+F 2 "MyFootprints:CAP_D16_L36-2" H 7838 3600 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/178501080" H 7800 3750 50  0001 C CNN
+	1    7800 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C14
+U 1 1 5C39A732
+P 8250 3750
+F 0 "C14" H 8300 3850 50  0000 L CNN
+F 1 "10000uF" V 8100 3600 50  0000 L CNN
+F 2 "MyFootprints:CAP_D16_L36-2" H 8288 3600 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product0/178501080" H 8250 3750 50  0001 C CNN
+	1    8250 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR012
+U 1 1 5C39AAD6
+P 7350 4000
+F 0 "#PWR012" H 7350 3750 50  0001 C CNN
+F 1 "GNDD" H 7350 3875 50  0001 C CNN
+F 2 "" H 7350 4000 50  0001 C CNN
+F 3 "" H 7350 4000 50  0001 C CNN
+	1    7350 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR013
+U 1 1 5C39ABB9
+P 7800 4000
+F 0 "#PWR013" H 7800 3750 50  0001 C CNN
+F 1 "GNDD" H 7800 3875 50  0001 C CNN
+F 2 "" H 7800 4000 50  0001 C CNN
+F 3 "" H 7800 4000 50  0001 C CNN
+	1    7800 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR014
+U 1 1 5C39AC9C
+P 8250 4000
+F 0 "#PWR014" H 8250 3750 50  0001 C CNN
+F 1 "GNDD" H 8250 3875 50  0001 C CNN
+F 2 "" H 8250 4000 50  0001 C CNN
+F 3 "" H 8250 4000 50  0001 C CNN
+	1    8250 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 3900 8250 4000
+Wire Wire Line
+	7800 3900 7800 4000
+Wire Wire Line
+	7350 3900 7350 4000
+Wire Wire Line
+	7350 3600 7350 3450
+Connection ~ 7350 3450
+Wire Wire Line
+	7800 3600 7800 3450
+Connection ~ 7800 3450
+Wire Wire Line
+	8250 3600 8250 3450
+Connection ~ 8250 3450
+Text Notes 5150 3300 0    60   ~ 0
+Q1 - любой силовой NPN
+Text Notes 4000 1550 0    60   ~ 0
+100?
+Wire Wire Line
+	4450 3900 4450 4000
+Wire Wire Line
+	4450 3450 4450 3600
+$Comp
+L GNDD #PWR015
+U 1 1 5C384EA4
+P 4450 4000
+F 0 "#PWR015" H 4450 3750 50  0001 C CNN
+F 1 "GNDD" H 4450 3875 50  0001 C CNN
+F 2 "" H 4450 4000 50  0001 C CNN
+F 3 "" H 4450 4000 50  0001 C CNN
+	1    4450 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 3450 4000 3600
+Wire Wire Line
+	4000 3900 4000 4000
+$Comp
+L GNDD #PWR016
+U 1 1 5C351A23
+P 4000 4000
+F 0 "#PWR016" H 4000 3750 50  0001 C CNN
+F 1 "GNDD" H 4000 3875 50  0001 C CNN
+F 2 "" H 4000 4000 50  0001 C CNN
+F 3 "" H 4000 4000 50  0001 C CNN
+	1    4000 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C5
+U 1 1 5C351A1D
+P 4000 3750
+F 0 "C5" H 4025 3850 50  0000 L CNN
+F 1 "10uF" H 4025 3650 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.00mm" H 4038 3600 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product/b41828a4106m007" H 4000 3750 50  0001 C CNN
+	1    4000 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C6
+U 1 1 5C324924
+P 4450 3750
+F 0 "C6" H 4475 3850 50  0000 L CNN
+F 1 "10uF" H 4475 3650 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.00mm" H 4488 3600 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product/b41828a4106m007" H 4450 3750 50  0001 C CNN
+	1    4450 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Screw_Terminal_01x02 J1
+U 1 1 5C3BCED8
+P 1150 3500
+F 0 "J1" H 1150 3600 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 1150 3300 50  0001 C CNN
+F 2 "MyFootprints:KLS2-306V-5.00-02P-2S" H 1150 3500 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product/kls2-306v-5.00-02p-2s-dg306-5.0-02p-12" H 1150 3500 50  0001 C CNN
+	1    1150 3500
+	-1   0    0    1   
+$EndComp
+$Comp
+L TPK-2-6 T2
+U 1 1 5C3C641F
+P 2200 3450
+F 0 "T2" H 2200 3150 50  0000 C CNN
+F 1 "TPK-2-6" H 2200 3150 50  0001 C CNN
+F 2 "MyFootprints:TPK-1" H 2200 3450 50  0001 C CNN
+F 3 "https://www.chipdip.ru/product/tpk-1-6v" H 2200 3450 50  0001 C CNN
+	1    2200 3450
+	1    0    0    1   
+$EndComp
+Text Notes 1950 3800 0    60   ~ 0
+ТПК-1-6
+$Comp
+L +5V #PWR017
+U 1 1 5C3B6FC1
+P 9750 3450
+F 0 "#PWR017" H 9750 3300 50  0001 C CNN
+F 1 "+5V" V 9750 3650 50  0000 C CNN
+F 2 "" H 9750 3450 50  0001 C CNN
+F 3 "" H 9750 3450 50  0001 C CNN
+	1    9750 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L Conn_01x03 J2
+U 1 1 5C3B7245
+P 4900 1250
+F 0 "J2" H 4900 1450 50  0000 C CNN
+F 1 "PCB_CONN" H 4900 1050 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x03_Pitch2.54mm" H 4900 1250 50  0001 C CNN
+F 3 "" H 4900 1250 50  0001 C CNN
+	1    4900 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR018
+U 1 1 5C3B7315
+P 4600 1150
+F 0 "#PWR018" H 4600 1000 50  0001 C CNN
+F 1 "+5V" V 4600 1350 50  0000 C CNN
+F 2 "" H 4600 1150 50  0001 C CNN
+F 3 "" H 4600 1150 50  0001 C CNN
+	1    4600 1150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4700 1150 4600 1150
+$Comp
+L GNDD #PWR019
+U 1 1 5C3B74D8
+P 4550 1400
+F 0 "#PWR019" H 4550 1150 50  0001 C CNN
+F 1 "GNDD" H 4550 1275 50  0001 C CNN
+F 2 "" H 4550 1400 50  0001 C CNN
+F 3 "" H 4550 1400 50  0001 C CNN
+	1    4550 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 1350 4550 1350
+Wire Wire Line
+	4550 1350 4550 1400
+$Comp
+L GNDD #PWR020
+U 1 1 5C3B7ED7
+P -1150 750
+F 0 "#PWR020" H -1150 500 50  0001 C CNN
+F 1 "GNDD" H -1150 625 50  0001 C CNN
+F 2 "" H -1150 750 50  0001 C CNN
+F 3 "" H -1150 750 50  0001 C CNN
+	1    -1150 750 
+	-1   0    0    1   
+$EndComp
+$Comp
+L PWR_FLAG #FLG021
+U 1 1 5C3B7F2F
+P -1150 900
+F 0 "#FLG021" H -1150 975 50  0001 C CNN
+F 1 "PWR_FLAG" H -1150 1050 50  0000 C CNN
+F 2 "" H -1150 900 50  0001 C CNN
+F 3 "" H -1150 900 50  0001 C CNN
+	1    -1150 900 
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	-1150 750  -1150 900 
+$Comp
+L PWR_FLAG #FLG022
+U 1 1 5C3B827E
+P -650 900
+F 0 "#FLG022" H -650 975 50  0001 C CNN
+F 1 "PWR_FLAG" H -650 1050 50  0000 C CNN
+F 2 "" H -650 900 50  0001 C CNN
+F 3 "" H -650 900 50  0001 C CNN
+	1    -650 900 
+	-1   0    0    1   
+$EndComp
+$Comp
+L +5V #PWR023
+U 1 1 5C3B8306
+P -650 750
+F 0 "#PWR023" H -650 600 50  0001 C CNN
+F 1 "+5V" H -650 900 50  0000 C CNN
+F 2 "" H -650 750 50  0001 C CNN
+F 3 "" H -650 750 50  0001 C CNN
+	1    -650 750 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-650 750  -650 900 
+Wire Wire Line
+	9750 3450 5900 3450
+$EndSCHEMATC
